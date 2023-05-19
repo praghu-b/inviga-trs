@@ -1,9 +1,4 @@
 /********** CSS Starts **********/
-*{
-    margin:0px;
-    padding:0px;
-    box-sizing:border-box;
-}
 body
 {
     font-family: 'Inter';
@@ -640,5 +635,3 @@ h6,
     border-color: transparent #D34351 #D34351 transparent;
     z-index: -1;
 }
-
-
