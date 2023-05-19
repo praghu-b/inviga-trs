@@ -669,4 +669,21 @@ h6,
     z-index: -1;
 }
 
+.carousel-inner{
+    max-height:609px;
+}
+.carousel-caption{
+    height:104vh;
+}
+
+
+/* Inviga Responsive */
+@media only screen and (max-width: 600px) {
+    .carousel-caption{
+        height:80vh;
+    }
+    
+}
+
+
 
