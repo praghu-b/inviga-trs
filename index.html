@@ -2,32 +2,895 @@
 <html lang="en">
 
 <head>
-  <title>Inviga</title>
-  <!-- Required meta tags -->
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Inviga</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
-  <link rel="stylesheet" href="/css/style.css" />
+    <!-- Favicon -->
+    <link href="img/favicon.jpg" rel="icon">
+
+    <!-- Styles -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/w3.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <style>
+        .carousel .carousel-indicators button {
+            width: 10px;
+            height: 10px;
+            border-radius: 100%;
+        }
+
+        .carousel-indicators .active {
+            background-color: aqua;
+            border-radius: 100%;
+        }
+
+        .w3-show p {
+            padding: 20px 5px 20px 10px !important;
+        }
+        .cursor-pointer {
+            cursor: pointer;
+        }
+
+        .swiper {
+            width: 100%;
+            height: 400px;
+            overflow: hidden;
+        }
+
+        .swiper-wrapper {
+            text-align: center;
+            display: flex;
+        }
+
+        .swiper-splide {
+            height: 330px !important;
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            top: 95% !important;
+            color: #000000;
+            height: 32px;
+            width: 32px;
+            border-radius: 50%;
+            background: #FFFFFF;
+            border: 1px solid #E2E5EB;
+            box-shadow: 0px 1px 3px rgba(49, 69, 102, 0.1);
+        }
+
+        .swiper-button-next::after,
+        .swiper-button-prev::after {
+            font-size: 12px !important;
+            font-weight: bolder;
+            color: #9AA3B2;
+        }
+    </style>
 </head>
 
 <body>
-  <!-- Navbar Start -->
-  
-  <!-- Navbar End -->
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm py-3 py-lg-0 px-3 px-lg-0">
+        <a href="index.html" class="navbar-brand ms-lg-5">
+            <img src="img/invigalogo.png" class="logocs" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0">
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About US</a>
+                    <div class="dropdown-menu m-0">
+                        <a href="#" class="dropdown-item">Who we are</a>
+                        <a href="#" class="dropdown-item">Our Purpose</a>
+                        <a href="#" class="dropdown-item">Culture</a>
+                        <a href="#" class="dropdown-item">Core Team</a>
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Market Opportunity</a>
+                    <div class="dropdown-menu m-0">
+                        <a href="#" class="dropdown-item">Healthcare in India</a>
+                        <a href="#" class="dropdown-item">Sectoral Growth Factors</a>
+                        <a href="#" class="dropdown-item">Traditional & Emerging Healthcare</a>
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Strategy</a>
+                    <div class="dropdown-menu m-0">
+                        <a href="#" class="dropdown-item">How we work</a>
+                        <a href="#" class="dropdown-item">Value Proposition</a>
+                        <a href="#" class="dropdown-item">Differentiation</a>
+                        <a href="#" class="dropdown-item">Investment Strategy</a>
+                        <a href="#" class="dropdown-item">Key Investment Criteria</a>
+                        <a href="#" class="dropdown-item">Value Creation Model</a>
+                    </div>
+                </div>
+                <a href="#" class="nav-item nav-link">Blogs</a>
+                <a href="#" class="nav-item nav-link">Contact Us</a>
+                <!--<a href="tel:+123456789" class="nav-item nav-link nav-contact bg-secondary text-white px-5 ms-lg-5"><i class="bi bi-telephone-outbound me-2"></i>+123 456 789</a>-->
+                <a href="" class="btn btn-primary letsbtn" style="background-color:#187080 !important;">Let's Talk<i
+                        class="fa fa-angle-right iconcs"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid p-0" style="margin-bottom: 0px !important;">
+        <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <video class="w-100" playsinline autoplay muted loop poster="cake.jpg">
+                    <source src="img/bg.mp4" type="video/webm">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="carousel-item active">
+                    <div style="height: 110vh;"
+                        class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 78%;">
+                            <h3 class="display-1 text-white mb-md-4 animated zoomIn">Making Healthcare accessible
+                                together</h3>
+                            <h5 class="text-white animated bounceInDown">If you're a founder: We can help grow your
+                                business with our knowledge and capital, deep rooted sectoral expertise and network in
+                                Healthcare & Finance. </h5>
+                            <a href="" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Let's Talk<i
+                                    class="fa fa-angle-right iconcs"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row banbtm" style="background-color:#FCECE3 !important;">
+        <div class="col-md-12">
+            <p>We foster better stakeholder-alignment, greater efficiency in capital allocations, and ultimately, better
+                healthcare and wellbeing in society.<br><b>At Inviga, we make healthcare accessible.</b></p>
+        </div>
+    </div>
+    <div class="row my-5" style="margin:5% 0% !important;">
+        <div class="col-md-4 collft">
+            <img src="img/abtimg.png" width="auto" height="500px" style="border-radius:30px;" />
+        </div>
+        <div class="col-md-8 collft colrgt">
+            <h2>"Inviga: A Fund that is redefining <br>Healthcare Investing"</h2><br>
+            <p style="color: #314566 !important;">We support <b>Healthcare & Pharma/life-science</b> enterprises across
+                the entire value <br>stream, by leveraging <b>expertise, global network</b> and <b>entrepreneurial,
+                    clinical,<br> investing,</b> banking & executive-management experience.</p><br>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="cardblu" style="margin-right:30px !important; min-height: 260px !important;">
+                        <h6 class="crdbx"><img src="img/iconsuit1.png" width="40px" />We help businesses</h6>
+                        <div class="row">
+                            <div class="col-md-1">
+                                <img src="img/tick.png" width="20px" />
+                            </div>
+                            <div class="col-md-11">
+                                Expand their markets through sustainable growth-strategies,
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-1">
+                                <img src="img/tick.png" width="20px" />
+                            </div>
+                            <div class="col-md-11">
+                                Imbibe best practices and benefit from our network/channel partners.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="cardorg" style="min-height: 260px !important;">
+                        <h6 class="crdbx"><img src="img/iconinves1.png" width="40px" />We help investors</h6>
+                        <div class="row">
+                            <div class="col-md-1">
+                                <img src="img/tick.png" width="20px" />
+                            </div>
+                            <div class="col-md-11">
+                                Procure a better understanding of healthcare through our lens.
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-1">
+                                <img src="img/tick.png" width="20px" />
+                            </div>
+                            <div class="col-md-11">
+                                Identify opportunities that matches risk preferences and back credible business
+                                narratives
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 cardbg" style="padding-top:2% !important;">
+            <div class="row">
+                <h2 style="padding-top:50px !important">Let's transform Indian Healthcare</h2>
+                <p>We operate at the confluence of Strategic, Financial, Impact & Platform Investing</p>
+                <div class="col-md-3">
+                    <div class="cardlst">
+                        <h5>Curate opportunities in "Traditional Healthcare".</h5>
+                        <p>Revitalize high quality hospital assets in uncrowded marketspaces</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="cardlst">
+                        <h5>Provide growth capital to "Emerging Healthcare":</h5>
+                        <p>Ranging from Health-Tech initiatives to Business Model Innovations. And through this, improve
+                            access to patients</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="cardlst">
+                        <h5>Emerging & Traditional Healthcare:</h5>
+                        <p>
+                            <b>Foster synergy between Emerging & Traditional Healthcare</b> businesses <b>"within the
+                                portfolio".</b>
+                            Pursue a "whole" that is greater than a sum of its parts.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="cardlst-1">
+                        <h5>Platform Investing Strategy</h5>
+                        <p>
+                            Attempt a <b>Platform Investing Strategy</b>, if optimal conditions emerge, and create a
+                            cluster of hospital investments on a hub and spoke model<br><br>
+                            <b>Enhanced Flexibility:</b> to exit in whole or parts
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <center><a href="" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight"
+                    style="margin-top:0px !important;">Let's Connect<i class="fa fa-angle-right iconcs"></i></a>
+            </center>
+        </div>
+    </div>
+    <div class="row banbtm1" style="margin-top:290px !important;">
+        <div class="col-md-6">
+            <h2 style="line-height: 40px !important;">We are domain experts in Indian <br>Healthcare Investments</h2>
+            <div class="row">
+                <div class="col-md-1">
+                    <img src="img/tick-blu.png" width="20px" />
+                </div>
+                <div class="col-md-11">
+                    <p>Access to strong advisory and market intelligence</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-1">
+                    <img src="img/tick-blu.png" width="20px" />
+                </div>
+                <div class="col-md-11">
+                    <p>Ability to generate proprietary deals and Co-Investing opportunities</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-1">
+                    <img src="img/tick-blu.png" width="20px" />
+                </div>
+                <div class="col-md-11">
+                    <p>Ability to attract managerial talent</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-1">
+                    <img src="img/tick-blu.png" width="20px" />
+                </div>
+                <div class="col-md-11">
+                    <p>Selecting the right leadership to drive the project</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-1">
+                    <img src="img/tick-blu.png" width="20px" />
+                </div>
+                <div class="col-md-11">
+                    <p>Closely monitoring strategy implementation</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-1">
+                    <img src="img/tick-blu.png" width="20px" />
+                </div>
+                <div class="col-md-11">
+                    <p>Timely anticipative action to pivot/course correct</p>
+                </div>
+            </div>
+            <a href="" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight"
+                style="margin-top:0px !important; background: none !important; border: none !important;">Know More<i
+                    class="fa fa-angle-right iconcs"></i></a>
+        </div>
+        <div class="col-md-6">
+            <img src="img/invesments.png" width="77%" style="float:center !important;" />
+        </div>
+    </div>
+    <div class="row my-5 rwpd" style="margin-top:5% !important;margin-bottom: 5% !important;">
+        <div class="col-md-6">
+            <img src="img/graph.png" width="80%" />
+        </div>
+        <div class="col-md-6">
+            <h2 style="line-height: 40px !important;">Market Opportunity in India</h2>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="w3-container">
+                        <button id="Demo1_show_btn" onclick="showHideMarketOppurtunity('Demo1','Demo1_show_btn')" class="w3-btn w3-block w3-white w3-left-align w3-hide">An Expanding Economy<img src="img/downarw.png" width="20px" style="float:right;"></button>
+                        <div id="Demo1" class="w3-accordion w3-container w3-hide w3-show">
+                            <p class="w3-left-align">
+                                <span class="fw-bold cursor-pointer" onclick="showHideMarketOppurtunity('Demo1_show_btn','Demo1')">An Expanding Economy<img class="cursor-pointer" src="img/downarw.png" width="20px" style="float:right;"></span><br /><br />
+                                <span>India is poised for a "Virtuous-Cycle" of growth thanks to a "Demographic Dividend", synchronised policy-support, large domestic market and a post-pandemic geo-political realignment.</span>
+                            </p>
+                        </div>
+                        <button id="Demo2_show_btn" onclick="showHideMarketOppurtunity('Demo2','Demo2_show_btn')" class="w3-btn w3-block w3-white w3-left-align">A Deepening Per-Capita Wallet<img src="img/downarw.png" width="20px" style="float:right;"></button>
+                        <div id="Demo2" class="w3-accordion w3-container w3-hide">
+                            <p class="w3-left-align">
+                                <span class="fw-bold cursor-pointer" onclick="showHideMarketOppurtunity('Demo2_show_btn','Demo2')">A Deepening Per-Capita Wallet<img class="cursor-pointer" src="img/downarw.png" width="20px" style="float:right;"></span><br /><br />
+                                <span>India is poised for a "Virtuous-Cycle" of growth thanks to a "Demographic Dividend", synchronised policy-support, large domestic market and a post-pandemic geo-political realignment.</span>
+                            </p>
+                        </div>
+                        <button id="Demo3_show_btn" onclick="showHideMarketOppurtunity('Demo3','Demo3_show_btn')" class="w3-btn w3-block w3-white w3-left-align">A Robust Demand Substratum for Healthcare<img src="img/downarw.png" width="20px" style="float:right;"></button>
+                        <div id="Demo3" class="w3-accordion w3-container w3-hide">
+                            <p class="w3-left-align">
+                                <span class="fw-bold cursor-pointer" onclick="showHideMarketOppurtunity('Demo3_show_btn','Demo3')">A Robust Demand Substratum for Healthcare<img src="img/downarw.png" width="20px" style="float:right;"></span><br /><br />
+                                <span>India is poised for a "Virtuous-Cycle" of growth thanks to a "Demographic Dividend", synchronised policy-support, large domestic market and a post-pandemic geo-political realignment.</span>
+                            </p>
+                        </div>
+                        <button id="Demo4_show_btn" onclick="showHideMarketOppurtunity('Demo4','Demo4_show_btn')" class="w3-btn w3-block w3-white w3-left-align">Strong Private Enterprise<img src="img/downarw.png" width="20px" style="float:right;"></button>
+                        <div id="Demo4" class="w3-accordion w3-container w3-hide">
+                            <p class="w3-left-align">
+                                <span class="fw-bold cursor-pointer" onclick="showHideMarketOppurtunity('Demo4_show_btn','Demo4')">Strong Private Enterprise<img class="cursor-pointer" src="img/downarw.png" width="20px" style="float:right;"></span><br /><br />
+                                <span>India is poised for a "Virtuous-Cycle" of growth thanks to a "Demographic Dividend", synchronised policy-support, large domestic market and a post-pandemic geo-political realignment.</span>
+                            </p>
+                        </div>
+                        <button id="Demo5_show_btn" onclick="showHideMarketOppurtunity('Demo5','Demo5_show_btn')" class="w3-btn w3-block w3-white w3-left-align">Coherent and Coordinated Policy Support<img src="img/downarw.png" width="20px" style="float:right;"></button>
+                        <div id="Demo5" class="w3-accordion w3-container w3-hide">
+                            <p class="w3-left-align">
+                                <span class="fw-bold cursor-pointer" onclick="showHideMarketOppurtunity('Demo5_show_btn','Demo5')">Coherent and Coordinated Policy Support<img class="cursor-pointer" src="img/downarw.png" width="20px" style="float:right;"></span><br /><br />
+                                <span>India is poised for a "Virtuous-Cycle" of growth thanks to a "Demographic Dividend", synchronised policy-support, large domestic market and a post-pandemic geo-political realignment.</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <a href="" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight" style="margin-top:0px !important; background: none !important; border: none !important;">Know More<i class="fa fa-angle-right iconcs"></i></a>
+        </div>
+    </div>
+    <!-- Team Start -->
+    <div class="container-fluid py-5 wow fadeInUp banbtm1" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="mb-5" style="max-width: 600px;">
+                <!--<h5 class="text-primary text-uppercase" style="letter-spacing: 5px;">Team Members</h5>-->
+                <h2>Meet the team supporting your growth</h2>
+            </div>
+            <div class="d-flex align-items-center" style="flex-direction: column; position: relative;">
+
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide col-lg-4 wow slideInUp" data-wow-delay="0.3s">
+                            <div class="position-relative rounded-top">
+                                <img class="img-fluid rounded-top w-100" src="img/team1.png" alt="">
+                            </div>
+                            <div class="bg-primary"
+                                style="margin-top:-61px !important; padding: 1px 0px 3px 10px; z-index: 0 !important;">
+                                <h4 style="text-align: start; font-size: 14px;" class="text-white">Dr. B S Ajaikumar
+                                </h4>
+                                <p class="text-white m-0" style="text-align: start; line-height: 20px!important; font-size: 11.22px;">
+                                    Founder and Sponsor</p>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide col-lg-4 wow slideInUp" data-wow-delay="0.3s">
+                            <div class="position-relative rounded-top">
+                                <img class="img-fluid rounded-top w-100" src="img/team2.png" alt="">
+                            </div>
+                            <div class="bg-primary"
+                                style="margin-top:-61px !important; padding: 1px 0px 3px 10px; z-index: 0 !important;">
+                                <h4 style="text-align: start; font-size: 14px;" class="text-white">Mr. Ajay Garg</h4>
+                                <p class="text-white m-0" style="text-align: start; line-height: 20px!important; font-size: 11.22px;">
+                                    Founder</p>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide col-lg-4 wow slideInUp" data-wow-delay="0.3s">
+                            <div class="position-relative rounded-top">
+                                <img class="img-fluid rounded-top w-100" src="img/team3.png" alt="">
+                            </div>
+                            <div class="bg-primary"
+                                style="margin-top:-61px !important; padding: 1px 0px 3px 10px; z-index: 0 !important;">
+                                <h4 style="text-align: start; font-size: 14px;" class="text-white">Mr.Akash Prasad</h4>
+                                <p class="text-white m-0" style="text-align: start; line-height: 20px!important; font-size: 11.22px;">
+                                    Founder</p>
+                            </div>
+                        </div>
+
+
+                        <div class="swiper-slide col-lg-4 wow slideInUp" data-wow-delay="0.3s">
+                            <div class="position-relative rounded-top">
+                                <img class="img-fluid rounded-top w-100" src="img/team4.png" alt="">
+                            </div>
+                            <div class="bg-primary"
+                                style="margin-top:-61px !important; padding: 1px 0px 3px 10px; z-index: 0 !important;">
+                                <h4 style="text-align: start; font-size: 14px;" class="text-white">Rakshith Rangarajan
+                                </h4>
+                                <p class="text-white m-0" style="text-align: start; line-height: 20px!important; font-size: 11.22px;">
+                                    Principal</p>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide col-lg-4 wow slideInUp" data-wow-delay="0.3s">
+                            <div class="position-relative rounded-top">
+                                <img class="img-fluid rounded-top w-100" src="img/team5.png" alt="">
+                            </div>
+                            <div class="bg-primary"
+                                style="margin-top:-61px !important; padding: 1px 0px 3px 10px; z-index: 0 !important;">
+                                <h4 style="text-align: start; font-size: 14px;" class="text-white">Parimala C</h4>
+                                <p class="text-white m-0" style="text-align: start; line-height: 20px!important; font-size: 11.22px;">
+                                    Founder and Sponsor</p>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide col-lg-4 wow slideInUp" data-wow-delay="0.3s">
+                            <div class="position-relative rounded-top">
+                                <img class="img-fluid rounded-top w-100" src="img/team1.png" alt="">
+                            </div>
+                            <div class="bg-primary"
+                                style="margin-top:-61px !important; padding: 1px 0px 3px 10px; z-index: 0 !important;">
+                                <h4 style="text-align: start; font-size: 14px;" class="text-white">Dr. B S Ajaikumar
+                                </h4>
+                                <p class="text-white m-0" style="text-align: start; line-height: 20px!important; font-size: 11.22px;">
+                                    Founder and Sponsor</p>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide col-lg-4 wow slideInUp" data-wow-delay="0.3s">
+                            <div class="position-relative rounded-top">
+                                <img class="img-fluid rounded-top w-100" src="img/team2.png" alt="">
+                            </div>
+                            <div class="bg-primary"
+                                style="margin-top:-61px !important; padding: 1px 0px 3px 10px; z-index: 0 !important;">
+                                <h4 style="text-align: start; font-size: 14px;" class="text-white">Mr. Ajay Garg</h4>
+                                <p class="text-white m-0" style="text-align: start; line-height: 20px!important; font-size: 11.22px;">
+                                    Founder</p>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide col-lg-4 wow slideInUp" data-wow-delay="0.3s">
+                            <div class="position-relative rounded-top">
+                                <img class="img-fluid rounded-top w-100" src="img/team3.png" alt="">
+                            </div>
+                            <div class="bg-primary"
+                                style="margin-top:-61px !important; padding: 1px 0px 3px 10px; z-index: 0 !important;">
+                                <h4 style="text-align: start; font-size: 14px;" class="text-white">Mr.Akash Prasad</h4>
+                                <p class="text-white m-0" style="text-align: start; line-height: 20px!important; font-size: 11.22px;">
+                                    Founder</p>
+                            </div>
+                        </div>
+
+
+                        <div class="swiper-slide col-lg-4 wow slideInUp" data-wow-delay="0.3s">
+                            <div class="position-relative rounded-top">
+                                <img class="img-fluid rounded-top w-100" src="img/team4.png" alt="">
+                            </div>
+                            <div class="bg-primary"
+                                style="margin-top:-61px !important; padding: 1px 0px 3px 10px; z-index: 0 !important;">
+                                <h4 style="text-align: start; font-size: 14px;" class="text-white">Rakshith Rangarajan
+                                </h4>
+                                <p class="text-white m-0" style="text-align: start; line-height: 20px!important; font-size: 11.22px;">
+                                    Principal</p>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide col-lg-4 wow slideInUp" data-wow-delay="0.3s">
+                            <div class="position-relative rounded-top">
+                                <img class="img-fluid rounded-top w-100" src="img/team5.png" alt="">
+                            </div>
+                            <div class="bg-primary"
+                                style="margin-top:-61px !important; padding: 1px 0px 3px 10px; z-index: 0 !important;">
+                                <h4 style="text-align: start; font-size: 14px;" class="text-white">Parimala C</h4>
+                                <p class="text-white m-0" style="text-align: start; line-height: 20px!important; font-size: 11.22px;">
+                                    Founder and Sponsor</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <!-- <div class="swiper-pagination"></div> -->
+
+                </div>
+
+
+
+                <a href="" class="btn btn-secondary animated slideInRight"
+                    style="z-index: 100; position: absolute; bottom: 10px; background: none !important; border: none !important;">
+                    View All<i class="fa fa-angle-right iconcs"></i>
+                </a>
+                <!--<div class="col-lg-4 wow slideInUp" data-wow-delay="0.9s">
+                    <div class="position-relative rounded-top">
+                        <img class="img-fluid rounded-top w-100" src="img/team-1.jpg" alt="">
+                        <div class="position-absolute bottom-0 end-0 d-flex flex-column bg-white p-1" style="margin-right: -25px;">
+                            <a class="btn btn-outline-secondary btn-square m-1" href="#"><i class="fab fa-twitter fw-normal"></i></a>
+                            <a class="btn btn-outline-secondary btn-square m-1" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
+                            <a class="btn btn-outline-secondary btn-square m-1" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                            <a class="btn btn-outline-secondary btn-square m-1" href="#"><i class="fab fa-instagram fw-normal"></i></a>
+                        </div>
+                    </div>
+                    <div class="bg-primary 67xt-center rounded-bottom p-4">
+  padding-bottom: 2px;                       <h3 class="text-white">Full Name</h3>
+                        <p class="text-white m-0" style="line-height: 20px!important; font-size: 11.22px;">Designation</p>
+                    </div>
+                </div>-->
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+    <div class="row rwpd"
+        style="background: #F6FCFD !important;padding-top:6rem !important;padding-bottom:6rem !important;">
+        <div class="col-md-6">
+            <h2 style="line-height: 40px !important;">Our Proposition</h2>
+            <p>Inviga, with its Thematic Focus, is uniquely capable of <br>executing the following Tracks better than
+                sector agnostic <br>Funds</p>
+            <a href="" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight"
+                style="margin-top:0px !important; background: none !important; border: none !important;">Know More<i
+                    class="fa fa-angle-right iconcs"></i></a><br><br>
+            <img src="img/propos.jpg" width="80%" />
+
+        </div>
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="w3-container propos">
+                        <button onclick="myFunction('Demo6')" class="w3-btn w3-block w3-white w3-left-align"><img
+                                src="img/icon1.jpg" width="40px" style="padding-right:10px !important;">Traditional
+                            Healthcare<img src="img/downarw.png" width="20px" style="float:right;"></button>
+                        <div id="Demo6" class="w3-accordion w3-container w3-hide w3-show w3-disp">
+                            <p>Pursue opportunities created by a "skew" in distribution of healthcare capacity/
+                                resources/ capital</p>
+                            <p><b>Value Drivers and Objectives</b></p>
+                            <ul>
+                                <li>Business transformation, modernization</li>
+                                <li>Clinical & Operational Excellence</li>
+                                <li>Financial restructuring</li>
+                                <li>Governance & controls</li>
+                            </ul>
+                        </div>
+                        <br>
+                        <button onclick="myFunction('Demo7')" class="w3-btn w3-block w3-white w3-left-align"><img
+                                src="img/icon2.jpg" width="40px" style="padding-right:10px !important;">Emerging
+                            Healthcare<img src="img/downarw.png" width="20px" style="float:right;"></button>
+                        <div id="Demo7" class="w3-accordion w3-container w3-hide w3-disp">
+                            <p>Pursue opportunities created by a "skew" in distribution of healthcare capacity/
+                                resources/ capital</p>
+                            <p><b>Value Drivers and Objectives</b></p>
+                            <ul>
+                                <li>Business transformation, modernization</li>
+                                <li>Clinical & Operational Excellence</li>
+                                <li>Financial restructuring</li>
+                                <li>Governance & controls</li>
+                            </ul>
+                        </div>
+                        <br>
+                        <button onclick="myFunction('Demo8')" class="w3-btn w3-block w3-white w3-left-align"><img
+                                src="img/icon3.jpg" width="40px" style="padding-right:10px !important;">Interactions
+                            between Portfolio Companies<img src="img/downarw.png" width="20px"
+                                style="float:right;"></button>
+                        <div id="Demo8" class="w3-accordion w3-container w3-hide w3-disp">
+                            <p>Pursue opportunities created by a "skew" in distribution of healthcare capacity/
+                                resources/ capital</p>
+                            <p><b>Value Drivers and Objectives</b></p>
+                            <ul>
+                                <li>Business transformation, modernization</li>
+                                <li>Clinical & Operational Excellence</li>
+                                <li>Financial restructuring</li>
+                                <li>Governance & controls</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 cardbg1">
+            <div class="row">
+                <h2 class="text-center" style="padding-top:50px !important;color: white !important;">Our investment
+                    criteria</h2>
+                <div class="col-md-3">
+                    <div class="cardlst2">
+                        <img src="img/icon4.jpg" width="40px" />
+                        <h5>Sectors</h5>
+                        <p>Healthcare, life sciences and pharma</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="cardlst2">
+                        <img src="img/icon5.jpg" width="40px" />
+                        <h5>Social Impact</h5>
+                        <p>A clearly defined social impact thesis integrated with the business strategy</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="cardlst2">
+                        <img src="img/icon6.jpg" width="40px" />
+                        <h5>Path to Profitability</h5>
+                        <p>A sustainable business model with a well defined path to profitability</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="cardlst2">
+                        <img src="img/icon7.jpg" width="40px" />
+                        <h5>Established Revenue Model</h5>
+                        <p>A proven business model with strong revenue traction</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="cardlst2">
+                        <img src="img/icon8.jpg" width="40px" />
+                        <h5>Returns Potential</h5>
+                        <p>A compelling upside & a fair margin of safety. Ability to chart a tangible growth pathway for
+                            value enhancement & exit</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="cardlst2">
+                        <img src="img/icon9.jpg" width="40px" />
+                        <h5>Team</h5>
+                        <p>Demonstrable commitment of the incumbent management/promoter toward delivering a positive
+                            impact on the vectors Inviga defines</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="cardlst2">
+                        <img src="img/icon10.jpg" width="40px" />
+                        <h5>Improved healthcare outcomes</h5>
+                        <p>An inherent ability to improve healthcare outcomes on an egalitarian basis</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="cardlst2">
+                        <img src="img/icon11.jpg" width="40px" />
+                        <h5>Target Region</h5>
+                        <p>Strong & established local market or, in case of growth stage investments, a durable,
+                            identifiable, and addressable market.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--<div class="row rwpd">
+        <div class="col-md-12">
+            <div class="row blgsec">
+                <h2 class="text-center" style="padding-top:50px !important;padding-bottom:20px !important;color:">Read our latest blogs</h2>
+                <div class="col-md-4">
+                    <div class="blgcol">
+                        <img src="img/blog1.jpg" width="100%">
+                        <div class="3lgcnt">
+       padding-left: 10px;                      <h4 style="text-align: start; font-size: 14px;">Facilisi viverra in malesuada ipsum elit.</h4>
+                            <p class="sml">
+    text-align: start;                             26 June, 2023 | 5 Min Read
+                            </p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio orci, vel ligula neque dui id odio netus.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="blgcol">
+                        <img src="img/blog2.jpg" width="100%">
+                        <div class="3lgcnt">
+       padding-left: 10px;                      <h4 style="text-align: start; font-size: 14px;">Facilisi viverra in malesuada ipsum elit.</h4>
+                            <p class="sml">
+    text-align: start;                             26 June, 2023 | 5 Min Read
+                            </p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio orci, vel ligula neque dui id odio netus.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="blgcol">
+                        <img src="img/blog3.jpg" width="100%">
+                        <div class="3lgcnt">
+       padding-left: 10px;                      <h4 style="text-align: start; font-size: 14px;">Facilisi viverra in malesuada ipsum elit.</h4>
+                            <p class="sml">
+    text-align: start;                             26 June, 2023 | 5 Min Read
+                            </p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio orci, vel ligula neque dui id odio netus.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <center><a href="" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight" style="margin-top:30px !important;margin-bottom:4rem !important; background: none !important; border: none !important;">View All<i class="fa fa-angle-right iconcs"></i></a></center>
+    </div>-->
+    <div class="row rwpd btmrw">
+        <div class="col-md-12">
+            <div class="btmsec">
+                <div class="col-md-6">
+                    <h2>
+                        Transform Indian Healthcare with us
+                    </h2>
+                    <br>
+                    <a href="" class="btn btn-primary letsbtn" style="border-radius:5px !important">Let's Connect<i
+                            class="fa fa-angle-right iconcs"></i></a>
+                    <br><br>
+                    <p>Email: helpdesk@inviga.in</p>
+                </div>
+                <div class="col-md-6"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light mt-5 py-5 wow fadeInUp btmftr" data-wow-delay="0.1s">
+        <div class="container pt-5">
+            <div class="row" style="display:flex !important; vertical-align: middle !important;">
+                <div class="col-8">
+                    <img src="img/invigalogo.png" width="200px" />
+                </div>
+                <div class="col-4">
+                    <p class="text-white">Sign up for the newsletter and stay updated!</p>
+                    <form style="max-width: 400px;">
+                        <div class="input-group">
+                            <input type="text" class="form-control border-white" placeholder="Your Email">
+                            <button class="btn btn-primary px-4">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row g-5 py-3">
+                <div class="col-lg-2 col-md-6">
+                    <h3 class="text-white mb-4">About Us</h3>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-light mb-2" href="#">Overview</a>
+                        <a class="text-light mb-2" href="#">Our Purpose</a>
+                        <a class="text-light mb-2" href="#">Culture</a>
+                        <a class="text-light mb-2" href="#">Core Team </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h3 class="text-white mb-4">Market Opportunity</h3>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-light mb-2" href="#">Healthcare in India</a>
+                        <a class="text-light mb-2" href="#">Sectoral Growth Factors</a>
+                        <a class="text-light mb-2" href="#">Traditional & Emerging Healthcare</a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h3 class="text-white mb-4">Approach</h3>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-light mb-2" href="#">How we work</a>
+                        <a class="text-light mb-2" href="#">Value Proposition</a>
+                        <a class="text-light mb-2" href="#">Differentiation</a>
+                        <a class="text-light mb-2" href="#">Investment Strategy</a>
+                        <a class="text-light mb-2" href="#">Primary Avenues of Interest</a>
+                        <a class="text-light mb-2" href="#">Value Creation Model</a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h3 class="text-white mb-4">More</h3>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-light mb-2" href="#">Blogs</a>
+                        <a class="text-light mb-2" href="#">Contact us</a>
+                        <a class="text-light mb-2" href="#">Disclaimers</a>
+                        <a class="text-light mb-2" href="#">Terms and Conditions</a>
+                        <a class="text-light mb-2" href="#">Privacy Policy</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" style="padding-left: 0px !important; margin-left: 0px !important;">
+                    <img src="img/mapimg.png" width="100%" />
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3 class="text-white mb-4">Reach Us</h3>
+                            <p class="mb-2"><i class="fa fa-phone me-3"></i>+91-80 4140 0698</p>
+                            <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@inviga.com</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h3 class="text-white mb-4">Connect with us</h3>
+                            <div class="d-flex">
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="#"><i
+                                        class="fa fa-facebook-f fw-normal"></i></a>
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="#"><i
+                                        class="fa fa-instagram fw-normal"></i></a>
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href="#"><i
+                                        class="fa fa-linkedin fw-normal"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-primary text-light py-4" style="background-color: #000000 !important;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center text-md-start">
+                    <center>
+                        <p class="mb-md-0">Copyright &copy; 2023<a class="text-white border-bottom" href="#">
+                                Inviga</a>. All Rights Reserved.</p>
+                    </center>
+                </div>
+                <!--<div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0">Designed by <a class="text-white border-bottom" href="#"></a></p>
+                </div>-->
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+    <!-- JavaScript Libraries -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script>
+        function showHideMarketOppurtunity(showId, hideId) {
+            hideAccordion()
+            var x = document.getElementById(showId);
+            var y = document.getElementById(hideId);
+            x.classList.add("w3-show");
+            y.classList.remove("w3-show");
+            y.classList.add("w3-hide");
+        }
+
+        function hideAccordion() {
+            var w3_accordion = document.getElementsByClassName('w3-accordion');
+            var w3_btn = document.getElementsByClassName('w3-btn');
+            for (let i = 0; i < w3_accordion.length; i++) {
+                w3_accordion[i].className = "w3-accordion w3-container w3-hide";
+                // console.log(w3_accordion[i]);
+            }
+            for (let i = 0; i < w3_btn.length; i++) {
+                w3_btn[i].className = "w3-btn w3-block w3-white w3-left-align";
+
+            }
+        }
+
+        function myFunction(id) {
+            var x = document.getElementById(id);
+            hideAccordion()
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+
+
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 4.5,
+            spaceBetween: 30,
+            type: 'loop',
+            loop: true,
+            interval: 300,
+            rewind: true,
+            autoplay: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+
 </body>
 
 </html>
