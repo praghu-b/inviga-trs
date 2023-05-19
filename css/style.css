@@ -149,8 +149,35 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6
     background: #ffffff !important;
     box-shadow: 0px 4px 6px -1px rgba(49, 69, 102, 0.1);
     margin: 30px 30px 30px 0px !important;
-    padding: 30px;
-    min-height: 293px !important;
+    padding: 20px;;
+    width: 270px;
+    height: 270px;
+}
+.cardlst2 p
+{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    color: #314566;
+}
+.cardlst2 img
+{
+    width: 56px;
+    height: 56px;
+    left: 0px;
+    top: 20px;
+}
+.cardlst2 h5
+{
+    font-weight: 600;
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+    
 }
 .cardlst
 {
@@ -642,11 +669,27 @@ h6,
     z-index: -1;
 }
 
-
+.inviga-dropdown{
+    border-bottom: 1px solid #187080; 
+    box-shadow: 0px 20px 25px -5px rgba(49, 69, 102, 0.15)!important;
+}
+.carousel-inner{
+    max-height:609px;
+}
+.carousel-caption{
+    height:104vh;
+}
 .collft h2{
     font-family: 'Inter';
     font-weight: 600 !important;
     font-size: 32px;
     line-height: 48px;
     letter-spacing: 0.1px;
+}
+/* Inviga Responsive */
+@media only screen and (max-width: 600px) {
+    .carousel-caption{
+        height:80vh;
+    }
+    
 }
